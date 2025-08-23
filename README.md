@@ -113,7 +113,7 @@ cd Windows11VM
 - Create/convert your own Windows 11 disk into QCOW2 format.  
 - Place it inside:  
   ```
-  windows11-docker-vm/disk/windows11.qcow2
+  Windows11VM/disk/windows11.qcow2
   ```
 
 ### 3. Build & Run
