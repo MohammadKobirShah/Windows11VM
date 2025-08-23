@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  windows11:
+    build: .
+    container_name: windows11-vm
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - "8080:8080"   # noVNC in browser
+      - "3389:3389"   # Windows RDP
+    volumes:
+      - ./disk/windows11.qcow2:/vm/windows11.qcow2
